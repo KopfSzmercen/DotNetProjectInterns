@@ -14,18 +14,17 @@ public class Money
         {
             throw new ArgumentException("Invalid currency");
         }
-        
-        if (amount <= 0) 
+
+        if (amount <= 0)
         {
             throw new ArgumentException("Amount must be greater than 0");
         }
-        
         var money = new Money
         {
             Currency = currency,
             Amount = amount
         };
-        
+
         return money;
     }
 }

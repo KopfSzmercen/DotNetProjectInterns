@@ -12,6 +12,7 @@ public class Product
     public ProductStatus Status { get; private set; }
     public Money Price { get; private set; }
 
+
     public static Product Create(string name, int quantity, Money price)
     {
         var product = new Product
